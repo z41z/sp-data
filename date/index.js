@@ -1,1 +1,9 @@
-
+module.exports.format = require('./format.js');
+module.exports.prevDay = require('./prevDay.js');
+module.exports.prevMonth = require('./prevMonth.js');
+module.exports.prevYear = require('./prevYear.js');
+module.exports.nextDay = require('./nextDay.js');
+module.exports.nextMonth = require('./nextMonth.js');
+module.exports.nextYear = require('./nextYear.js');
+module.exports.goto = require('./goto.js');
+module.exports.calc = require('./calc.js');
