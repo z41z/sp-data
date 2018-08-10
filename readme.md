@@ -92,6 +92,23 @@ parse.boolean('a') //undefined, [] ,{} ,NaN ,'' ,' ', null return false
 //=> true
 ```
 
+### Object
+
+```js
+const obj = require('sp-fe-beta/object');
+obj.reverse(obj = {a: 1, b: 2})
+//=> {1: a, 2: b}
+obj.reverse(obj = {a: 1, b: 2}, keyName = 'a')
+//=> {1: a, b: 2}
+obj.reverse(obj = [{a: 1, b: 2}, {a: 2, b: 3, d: 5}])
+//=> [ { '1': 'a', '2': 'b' }, { '2': 'a', '3': 'b', '5': 'd' } ]
+//last value will be the last key
+obj.reverse(obj = [{a: 1, b: 2}, {a: 2, b: 3, c: 5, d: 5, e: 5}])
+//=>[ { '1': 'a', '2': 'b' }, { '2': 'a', '3': 'b', '5': 'e' } ]
+obj.reverse(obj = [{a: 1, b: 2}, {a: 2, b: 3, d: 5}], keyName = 'a')
+//=> [ { '1': 'a', b: 2 }, { '2': 'a', b: 3, d: 5 } ]
+```
+
 ## License
 
 MIT

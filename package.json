@@ -1,6 +1,6 @@
 {
   "name": "sp-fe-beta",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "SP FrontEnd",
   "main": "index.js",
   "homepage": "https://github.com/r3qu3stt1me0ut/sp-fe",
@@ -16,7 +16,10 @@
     "frontend",
     "javascript",
     "dateformat",
-    "jsdate"
+    "jsdate",
+    "parse",
+    "sort",
+    "reverse"
   ],
   "author": "SP",
   "license": "MIT",
