@@ -18,7 +18,7 @@ npm install --save sp-fe-beta
 ```js
 <script src="https://unpkg.com/sp-fe-beta/dist/sp-fe.min.js"></script>
 <script>
-  sp.array.create(150, 0);
+  sp.array.create(5, 0);
   //=> [0, 0, 0, 0, 0]
 </script>
 ```
