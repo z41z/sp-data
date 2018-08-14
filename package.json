@@ -1,6 +1,6 @@
 {
   "name": "sp-fe-beta",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "SP FrontEnd",
   "main": "index.js",
   "homepage": "https://github.com/r3qu3stt1me0ut/sp-fe",
@@ -9,7 +9,7 @@
     "url": "https://github.com/r3qu3stt1me0ut/sp-fe"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "keywords": [
     "SP",
@@ -23,7 +23,11 @@
   ],
   "author": "SP",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.17.10"
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "lodash": "^4.17.10",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
