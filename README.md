@@ -15,7 +15,7 @@ npm install --save sp-fe-beta
 
 ### CDN
 
-```js
+```html
 <script src="https://unpkg.com/sp-fe-beta/dist/sp-fe.min.js"></script>
 <script>
   sp.array.create(5, 0);
