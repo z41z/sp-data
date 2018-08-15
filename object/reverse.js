@@ -1,6 +1,6 @@
 module.exports = function (obj, keyName) {
   if (!keyName) { // reverse All keys and values
-    if (obj instanceof Array) { // obj = [{a: 1}, {a: 2}]
+    if (obj instanceof Array) { // obj = [{a: 1}, {a: 2}] //Array.isArray(arr)
       if (obj.length) {
         let results = [];
         obj.forEach(item => {
@@ -32,7 +32,7 @@ module.exports = function (obj, keyName) {
       return {};
     }
   } else { //reverse one of keys and values
-    if (obj instanceof Array) {
+    if (obj instanceof Array) { //Array.isArray(arr)
       if (obj.length) {
         obj.forEach(item => {
           if (item[keyName]) { //item.keyName is not undefined

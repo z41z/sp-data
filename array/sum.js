@@ -5,7 +5,7 @@ module.exports = function (arr = [], isDeep = false) {
   if (!isDeep) {
     if (!boolean(arr)) {
       result = 0;
-    } else if (arr instanceof Array) { // arr like [1,2,3,4]
+    } else if (arr instanceof Array) { // arr like [1,2,3,4]  //Array.isArray(arr)
       return arr.reduce((a, b) => {
         return parseNum(a) + parseNum(b);
       })
@@ -13,10 +13,10 @@ module.exports = function (arr = [], isDeep = false) {
       result = arr;
     }
   } else {
-    if (arr instanceof Array) {
-      result = (arr[0] instanceof Array) ? [] : [{}];
+    if (arr instanceof Array) { //Array.isArray(arr)
+      result = (arr[0] instanceof Array) ? [] : [{}]; //Array.isArray(arr)
       arr.forEach((item) => {
-        if (item instanceof Array) { //arr like [[1,2,3],[4,5,6],[7,8]]
+        if (item instanceof Array) { //arr like [[1,2,3],[4,5,6],[7,8]] //Array.isArray(arr)
           item.forEach((i, index) => {
             result[index] = parseNum(result[index]) + parseNum(i);
           })

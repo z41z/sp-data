@@ -2,7 +2,7 @@ const boolean = require('../parse/boolean')
 module.exports = function (obj = {}, target, replacer) {
   if (!boolean(obj)) { //if obj = null, undefined, '', false, {}, [] return {}
     return {};
-  } else if (obj instanceof Array) { //if obj is Array of Objects [{}]
+  } else if (obj instanceof Array) { //if obj is Array of Objects [{}] //Array.isArray(arr)
     obj.forEach(item => {
       if (item[target]) {
         if (replacer) {
