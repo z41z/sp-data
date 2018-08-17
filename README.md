@@ -103,11 +103,13 @@ arr.sortObj(arr = [{name: 'Alice', age: 12},{name: 'Bob', age: 14}, {name: 'John
 arr.unique(arr = [1, 2, 3, 4, 1])
 //=>[1, 2, 3, 4]
 
+//unique by all key
+arr.uniqueObj(arr = [{a: 1, b: 2}, {a: 2, b: 3}, {a: 1}, {a: 1}])
+//=>[{a: 1, b: 2}, {a: 2, b: 3}, {a: 1}]
+
+//unique by key name
 arr.uniqueObj(arr = [{a: 1, b: 2}, {a: 2, b: 3}, {a: 1}], keyName = 'a')
 //=>[{a: 1, b: 2}, {a: 2, b: 3}]
-
-arr.uniqueObj(arr = [{a: 1, b: 2}, {a: 2, b: 3}, {a: 1}], keyName = 'a', isDeep = true)
-//=>[{a: 1, b: 2}, {a: 2, b: 3}, {a: 1}]
 
 arr.filter(arr = [1, 3, 4, 5], function(item) {return item > 3;})
 //=>[4, 5]
