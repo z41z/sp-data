@@ -6,6 +6,5 @@ module.exports = {
     filename: 'sp-fe.min.js',
     library: "sp",
   },
-  module: {
-  }
+  module: {}
 };

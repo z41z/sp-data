@@ -1,11 +1,11 @@
 module.exports = function (val) {
   if (val instanceof Object) {
     if (val instanceof Array) {
-      return val.length ? true : false; //空数组
+      return val.length ? true : false; //val = []
     } else {
-      return Object.keys(val).length ? true : false; //空对象
+      return Object.keys(val).length ? true : false; //val = {}
     }
-  } else if (typeof val === 'string') { //转换' '为false
+  } else if (typeof val === 'string') { //val = ' '
     return Boolean(val.trim());
   } else {
     return Boolean(val);

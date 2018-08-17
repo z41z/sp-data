@@ -4,7 +4,7 @@ module.exports = function (arr = [{}], keyName = false, ) {
   // return isDeep ? _.uniqWith(arr,  _.isEqual) : _.uniqBy(arr, keyName);
   let result = [];
   let filterData = arr.filter(item => {
-    if (Object.keys(item).indexOf(keyName) < 0) {
+    if (!(keyName in item)) {
       result.push(item)
     } else {
       return item
