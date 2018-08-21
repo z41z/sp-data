@@ -1,18 +1,18 @@
 {
-  "name": "sp-fe-beta",
-  "version": "1.0.22",
-  "description": "SP FrontEnd",
+  "name": "sp-fe-data",
+  "version": "1.0.23",
+  "description": "Common Data Trans methods for Date, Array, Object, Array of Objects etc.",
   "main": "index.js",
-  "homepage": "https://github.com/r3qu3stt1me0ut/sp-fe",
+  "homepage": "https://github.com/r3qu3stt1me0ut/sp-fe-data",
   "repository": {
     "type": "git",
-    "url": "https://github.com/r3qu3stt1me0ut/sp-fe"
+    "url": "https://github.com/r3qu3stt1me0ut/sp-fe-data"
   },
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js"
   },
   "keywords": [
-    "SP",
+    "sp-fe-data",
     "frontend",
     "javascript",
     "dateformat",
@@ -21,7 +21,7 @@
     "sort",
     "reverse"
   ],
-  "author": "SP",
+  "author": "sp-fe",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",

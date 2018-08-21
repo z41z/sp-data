@@ -1,6 +1,6 @@
 # sp-fe-beta
 
-Common Function for Date, Array, Object, Array of Objects, Parse Data etc.
+Common Data Trans methods for Date, Array, Object, Array of Objects etc.
 
 ***
 
@@ -16,9 +16,9 @@ npm install --save sp-fe-beta
 ### CDN
 
 ```html
-<script src="https://unpkg.com/sp-fe-beta/dist/sp-fe.min.js"></script>
+<script src="https://unpkg.com/sp-fe-data/index.min.js"></script>
 <script>
-  sp.array.create(5, 0);
+  __DATA.array.create(5, 0);
   //=> [0, 0, 0, 0, 0]
 </script>
 ```
