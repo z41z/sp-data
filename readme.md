@@ -82,7 +82,7 @@ date.calc(startDate = new Date(2018, 01, 01), endDate = new Date(2000, 01, 01));
 ### Array && Array of Objects
 
 ```js
- //arr: create(), sort(), sortObj(), unique(), uniqueObj(), filter(), sum(), createByArrObj()
+ //arr: create(), sort(), sortObj(), unique(), uniqueObj(), filter(), sum(), createByArrObj(), mergeObj()
 const arr = require('sp-fe-beta/array');
 
 arr.create((length = 5, fillVal = 'a'))
@@ -142,6 +142,36 @@ arr.createByArrObj(arrObj = [ { a: 3, b: 7},{a: 0, b: 3}, {a: 2, b: 4} ], indexN
 
 arr.createByArrObj(arrObj = [ { a: 3, b: 7}, {a: 0, b: 3}, {a: 2, b: 4} ], indexName = 'a', valueName = 'b', length = 6, defaultValue = 666)
 //=>[ 3, 666, 4, 7, 666, 666 ]
+
+let src = [{
+  city: 'city1',
+  total: 0
+}, {
+  city: 'city2',
+  total: 0
+}, {
+  city: 'city3',
+  total: 0
+}, {
+  city: 'city4',
+  total: 0
+}];
+let dest = [{
+  city: 'city1',
+  total: 10
+}, {
+  city: 'city2',
+  total: 0
+}, {
+  city: 'city3',
+  total: 0
+}];
+
+arr.mergeObj(src, mergeName = 'a', dest)
+//=>[ { city: 'city1', total: 10 },
+  // { city: 'city2', total: 0 },
+  // { city: 'city3', total: 0 },
+  // { city: 'city4', total: 0 } ]
 ```
 
 ### Object

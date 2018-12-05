@@ -6,6 +6,7 @@ const unique = require('./unique.js');
 const uniqueObj = require('./uniqueObj.js');
 const filter = require('./filter.js');
 const sum = require('./sum.js');
+const mergeObj = require('./mergeObj.js');
 
 module.exports.default = module.exports = {
   create,
@@ -15,5 +16,6 @@ module.exports.default = module.exports = {
   unique,
   uniqueObj,
   filter,
-  sum
+  sum,
+  mergeObj
 }
