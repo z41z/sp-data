@@ -1,4 +1,11 @@
-module.exports.date = require('./date');
-module.exports.array = require('./array');
-module.exports.parse = require('./parse');
-module.exports.object = require('./object');
+const date = require('./date');
+const array = require('./array');
+const parse = require('./parse');
+const object = require('./object');
+
+module.exports.default = module.exports = {
+  date,
+  array,
+  parse,
+  object
+}

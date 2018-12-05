@@ -1,2 +1,7 @@
-module.exports.number = require('./number.js');
-module.exports.boolean = require('./boolean.js');
+const number = require('./number.js');
+const boolean = require('./boolean.js');
+
+module.exports.default = module.exports = {
+  number,
+  boolean
+}

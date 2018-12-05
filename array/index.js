@@ -1,8 +1,19 @@
-module.exports.create = require('./create.js');
-module.exports.createByArrObj = require('./createByArrObj.js');
-module.exports.sort = require('./sort.js');
-module.exports.sortObj = require('./sortObj.js');
-module.exports.unique = require('./unique.js');
-module.exports.uniqueObj = require('./uniqueObj.js');
-module.exports.filter = require('./filter.js');
-module.exports.sum = require('./sum.js');
+const create = require('./create.js');
+const createByArrObj = require('./createByArrObj.js');
+const sort = require('./sort.js');
+const sortObj = require('./sortObj.js');
+const unique = require('./unique.js');
+const uniqueObj = require('./uniqueObj.js');
+const filter = require('./filter.js');
+const sum = require('./sum.js');
+
+module.exports.default = module.exports = {
+  create,
+  createByArrObj,
+  sort,
+  sortObj,
+  unique,
+  uniqueObj,
+  filter,
+  sum
+}

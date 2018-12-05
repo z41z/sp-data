@@ -1,2 +1,7 @@
-module.exports.reverse = require('./reverse.js');
-module.exports.rename = require('./rename.js');
+const reverse = require('./reverse.js');
+const rename = require('./rename.js');
+
+module.exports.default = module.exports = {
+  reverse,
+  rename
+}
