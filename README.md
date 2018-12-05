@@ -142,6 +142,7 @@ arr.createByArrObj(arrObj = [ { a: 3, b: 7},{a: 0, b: 3}, {a: 2, b: 4} ], indexN
 
 arr.createByArrObj(arrObj = [ { a: 3, b: 7}, {a: 0, b: 3}, {a: 2, b: 4} ], indexName = 'a', valueName = 'b', length = 6, defaultValue = 666)
 //=>[ 3, 666, 4, 7, 666, 666 ]
+  total: 0
 ```
 
 ### Object
