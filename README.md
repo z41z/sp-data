@@ -1,4 +1,4 @@
-# sp-fe-beta
+# sp-data
 
 Common Data Trans methods for Date, Array, Object, Array of Objects etc.
 
@@ -9,14 +9,14 @@ Common Data Trans methods for Date, Array, Object, Array of Objects etc.
 ### NPM
 
 ``` node
-npm install --save sp-fe-beta
-// or yarn add sp-fe-beta
+npm install --save sp-data
+// or yarn add sp-data
 ```
 
 ### CDN
 
 ```html
-<script src="https://unpkg.com/sp-fe-data/index.min.js"></script>
+<script src="https://unpkg.com/sp-data/index.min.js"></script>
 <script>
   __DATA.array.create(5, 0);
   //=> [0, 0, 0, 0, 0]
@@ -29,7 +29,7 @@ npm install --save sp-fe-beta
 
 ```js
  //sp: {date, array, object, parse}
-const sp = require('sp-fe-beta');
+const sp = require('sp-data');
 
 sp.date.format('yyyy-MM-dd', new Date());
 //=> 2018-08-06
@@ -45,7 +45,7 @@ sp.array.sort(arr = [1, 2, 3, 4, 1], isASC = false)
 
 ```js
 //date: format(), goto(), prevDay(), prevMonth(), prevYear(), nextDay(), nextMonth(), nextYear(), calc()
-const date = require('sp-fe-beta/date');
+const date = require('sp-data/date');
 
 date.format('yyyy-MM-dd', new Date());
 //=> 2018-08-06
@@ -83,7 +83,7 @@ date.calc(startDate = new Date(2018, 01, 01), endDate = new Date(2000, 01, 01));
 
 ```js
  //arr: create(), sort(), sortObj(), unique(), uniqueObj(), filter(), sum(), createByArrObj(), mergeObj()
-const arr = require('sp-fe-beta/array');
+const arr = require('sp-data/array');
 
 arr.create((length = 5, fillVal = 'a'))
 //=>['a', 'a', 'a', 'a', 'a']
@@ -153,7 +153,7 @@ arr.mergeObj(src,mergeName = 'city', dest)
 
 ```js
 //obj: reverse(), rename()
-const obj = require('sp-fe-beta/object');
+const obj = require('sp-data/object');
 
 obj.reverse(obj = {a: 1, b: 2})
 //=> {1: a, 2: b}
@@ -196,7 +196,7 @@ obj.rename(obj = [{ a: 2, b: 3, c: 4}, {a: 3, b: 5}], 'c', 'x')
 
 ```js
 //parse: number(), bollean()
-const parse = require('sp-fe-beta/parse');
+const parse = require('sp-data/parse');
 
 //undefined, [] ,{} ,NaN ,'' ,' ', null or not number string return 0
 parse.number(num = [], fixedLength = 0)
