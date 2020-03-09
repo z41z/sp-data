@@ -28,7 +28,7 @@ npm install --save sp-data
 ## Usage
 
 ```js
- //sp: {date, array, object, parse, entity}
+ //sp: {date, array, object, parse, entity, string}
 const sp = require('sp-data');
 
 sp.date.format('yyyy-MM-dd', new Date());
@@ -232,6 +232,14 @@ entity.encode('1')
 // &#49;
 entity.decode('&#49;&#50;&#51;')
 // 123
+```
+
+### string
+```js
+//entity: encode(str), decode(str)
+const string = require('sp-data/string')
+string.replace('你我他',{你:'ni',我:'wo'})
+// niwo他
 ```
 ## License
 
